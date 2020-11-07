@@ -1,0 +1,148 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+}
+
+.joinInnerContainer {
+    width: 20%;
+}
+
+.joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+        height: 100%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+
+
+}
+
+.iconbox{
+    margin-top: 7px;
+}
+.modal-button{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+}
+.modal-button img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+button:focus {
+    outline: 0;
+}
+.icon-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon-img{
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 3px;
+}
+.modal-img-button{
+    outline: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+.img-hide-tag{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #50505a;
+    opacity: 0;
+    opacity: 0.6;
+}
+.icon-img:hover .img-hide-tag{
+    transition: all 300ms ease-in;
+    -webkit-animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.modal-img-button img{
+    width: 50px;
+    height: 50px;
+}
+.modal-button{
+    cursor: pointer;
+}
